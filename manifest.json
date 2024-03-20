@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Embedded Glean Dogfood",
+  "description": "For internally dogfooding embedded Glean features",
+  "version": "1.0",
+  "permissions": [
+    "scripting",
+    "activeTab"
+  ],
+  "action": {
+    "default_icon": "images/glean-icon-rounded.svg"
+  },
+  "chrome_url_overrides": {
+    "newtab": "ntp/ntp.html"
+  },
+  "host_permissions": [
+    "https://*.glean.com/"
+  ]
+}
